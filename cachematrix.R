@@ -2,6 +2,13 @@
 ## which enable more rapid solution of the inverses of matrices through caching
 ## the caching is supported through the lexical scoping properties of R
 
+##Execution instructions:
+##source() this file
+##call makeCacheMatrix() passing a defined square matrix (invertible) as argument
+##and assigning output of makeCacheMatrix() to a new object
+##call cacheSolve() passing object containing output of makeCacheMatrix() (which is a list) as argument
+##inverse of original matrix should be returned, cached or not, unless it was not invertible
+
 ## makeCacheMatrix creates a matrix object that can cache its inverse
 makeCacheMatrix <- function(x = matrix()) {
     inv <- NULL
