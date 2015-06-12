@@ -10,6 +10,8 @@
 ##inverse of original matrix should be returned, cached or not, unless it was not invertible
 
 ## makeCacheMatrix creates a matrix object that can cache its inverse
+
+##An additional test line for commit to GitHub on new machine 12/06/15
 makeCacheMatrix <- function(x = matrix()) {
     inv <- NULL
     set <- function(y) {
